@@ -30,12 +30,12 @@ ai生成的代码，例如：
                     < /div >
 
 你只需要在\h5_html对应的文件，这样打印即可
-< div class="dropdown-menu" >
-                        <?php 
-                            foreach ($yuyan as $i) {
-                                echo '< a href="'.$i['lang'].'" class="dropdown-item">'.$i['name'].'< /a >';
+<  div class= "dropd own-menu" >
+                        < ? ph p 
+                            for each ($yu yan a s $i) {
+                                ec ho '< a href="'.$i['lang'].'" class="dropdown-item">'.$i['name'].'< / a >';
                             }
-                        ?>
+                        ? >
                     < /div >
 
 
