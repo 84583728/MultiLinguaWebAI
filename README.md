@@ -16,8 +16,8 @@
 该代码工作原理是，基于克劳德，调试提示词，例如让克劳德生成网页，要求网页有多语言功能，多语言下拉必须要考虑多国语言并且下拉必须是a标签，要求生成中文网页
 
 ai生成的代码，例如：
-<a href="/">首页</a>
-<span class="current" data-i18n="terms">使用条款</span>
+< a href="/" >首页< /a >
+< span class="current" data-i18n="terms" >使用条款< /span >
 
 如果你希望【使用条款】被翻译，那么就加上data-i18n="terms"，其中"terms"文本随意即可，当用户访问网页时，后台会自动渲染带data-i18n标签的文本并翻译为对应语言
 
@@ -25,18 +25,18 @@ ai生成的代码，例如：
 
 
 
-假设克劳德生成的多语言部分是<div class="dropdown-menu">
-                        <a标签>
-                    </div>
+假设克劳德生成的多语言部分是< div class="dropdown-menu" >
+                        < a标签 >
+                    < /div >
 
 你只需要在\h5_html对应的文件，这样打印即可
-<div class="dropdown-menu">
+< div class="dropdown-menu" >
                         <?php 
                             foreach ($yuyan as $i) {
-                                echo '<a href="'.$i['lang'].'" class="dropdown-item">'.$i['name'].'</a>';
+                                echo '< a href="'.$i['lang'].'" class="dropdown-item">'.$i['name'].'< /a >';
                             }
                         ?>
-                    </div>
+                    < /div >
 
 
 代码结构：----------------------------------------------------------------
